@@ -1,9 +1,10 @@
-import ExpenseItem from './components/ExpenseItem.js';
+import ExpenseItem from "./components/ExpenseItem/ExpenseItem.js";
 
 function App() {
   return (
     <div>
-      <ExpenseItem />
+      <h2>Let's get started!</h2>
+      <ExpenseItem></ExpenseItem>
     </div>
   );
 }
