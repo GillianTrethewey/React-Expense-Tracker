@@ -1,13 +1,14 @@
 import "./ExpenseItem.css";
 
-const ExpenseItem = () => {
+const ExpenseItem = (props) => {
+
   return (
     <div className="expense-item">
-      <div>May 9th 2023</div>
+      <div>{props.date.toISOString()}</div>
       <div>
-        <h2 className="expense-item__description">Car Insurance</h2>
+        <h2 className="expense-item__description">{props.title}</h2>
       </div>
-      <div className="expense-item__price">$294.67</div>
+      <div className="expense-item__price">${props.amount}</div>
     </div>
   );
 };
